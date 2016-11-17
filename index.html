@@ -5,7 +5,12 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
-    <svg width="95%" height="800" veiwBox="0 0 800 800" style="background-color:teal">
+    <svg width="95%" height="600" veiwBox="0 0 800 800" style="background-image: url(https://i.ytimg.com/vi/VkLKY4rx8B0/maxresdefault.jpg)">
+      <image id="cat" x="800" y="300" width="80" height="80" xlink:href=".git/Picachu.gif-c200"/>
+      <image id="ball" x="200" y="300" width="80" height="80" xlink:href=".git/Ball.gif-c200">
+        <animate id="down" attributeName="y" from="100" to="400" dur="5" begin="0s ; up.end"/>
+        <animate id="up" attributeName="y" from="400" to="100" dur="5" begin="down.end"/>
+      </image>
 
     </svg>
   </body>
