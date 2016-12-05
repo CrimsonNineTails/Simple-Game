@@ -5,13 +5,24 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
-    <svg width="95%" height="600" veiwBox="0 0 800 800" style="background-image: url(https://i.ytimg.com/vi/VkLKY4rx8B0/maxresdefault.jpg)">
+
+    <svg id="screen" width="95%" height="600" veiwBox="0 0 800 800" style="background-image: url(https://i.ytimg.com/vi/VkLKY4rx8B0/maxresdefault.jpg)">
       <image id="cat" x="800" y="300" width="80" height="80" xlink:href=".git/Picachu.gif-c200"/>
-      <image id="ball" x="200" y="300" width="80" height="80" xlink:href=".git/Ball.gif-c200">
+      <image id="ball" x="200" y="300" width="80" height="80" xlink:href=".git/berry.png">
         <animate id="down" attributeName="y" from="100" to="400" dur="5" begin="0s ; up.end"/>
         <animate id="up" attributeName="y" from="400" to="100" dur="5" begin="down.end"/>
       </image>
-
+      <image id="ball2" x="200" y="300" width="80" height="80" xlink:href=".git/berry.png">
+        <animate id="down2" attributeName="y" from="100" to="400" dur="5" begin="0s ; up2.end"/>
+        <animate id="up2" attributeName="y" from="400" to="100" dur="5" begin="down2.end"/>
+      </image>
+      <image id="enemy" x="100" y="300" width="80" height="80" xlink:href=".git/Ball.gif-c200">
+        <animate id="right" attributeName="x" from="100" to="1000" dur="3" begin="0s ; left.end"/>
+        <animate id="left" attributeName="x" from="1000" to="100" dur="3" begin="right.end"/>
+      </image>
+      <image id="enemy2" x="80" y="80" width="80" height="80" xlink:href=".git/Ball.gif-c200"/>
+        <text id="score" x="550" y="100"fill="white"></text>
+      <text id="life" x="550" y="70"fill="white"></text>
     </svg>
   </body>
   <script type="text/javascript" src="java.js"></script>
